@@ -33,8 +33,13 @@ class Modelo extends Model
 
 
     public function marca(){
-        //Um modelo pertence a umAa marca
+        //Um modelo pertence a uma marca
         return $this->belongsTo('App\Models\Marca');
+    }
+
+    public function carros(){
+        //Um modelo tem muitos CARROS
+        return $this->hasMany('App\Models\Carro');
     }
 
 
