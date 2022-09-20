@@ -15,11 +15,8 @@ class MarcaController extends Controller
         $this->marca = $marca; 
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+    //MÉTODO RESPONSAVEL POR LISTAR TODOS OS DADOS    
     public function index(Request $request)
     {
 
